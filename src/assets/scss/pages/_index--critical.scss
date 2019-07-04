@@ -111,7 +111,8 @@
     &__item {
         display: block;
         color: $black;
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 36px;
         text-align: center;
         cursor: pointer;
 
@@ -120,7 +121,7 @@
         }
 
         & + .sidebar__item {
-            margin-top: 30px;
+            margin-top: 10px;
         }
     }
 
@@ -144,7 +145,7 @@
             font-size: 14px;
 
             & + .sidebar__item {
-                margin-top: 50px;
+                margin-top: 25px;
             }
         }
 
@@ -203,7 +204,7 @@
             font-size: toRem(20);
 
             & + .sidebar__item {
-                margin-top: toRem(50);
+                margin-top: toRem(30);
             }
         }
 
