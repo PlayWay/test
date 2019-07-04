@@ -1,0 +1,77 @@
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: reg;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+    &::-moz-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &:-moz-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+}
+
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: reg;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    &::-webkit-input-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &::-moz-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &:-moz-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+    }
+}
+
+.input {
+    position: relative;
+    display: block;
+}
+
+.textarea {
+    position: relative;
+    display: block;
+}
+

@@ -1,0 +1,154 @@
+.sidebar {
+    transition: .3s cubic-bezier(0, 0.95, 0.49, 1);
+    transition-property: transform;
+
+    &__item {
+        transition: color .3s ease;
+    }
+
+    &__button {
+        &--contact {
+            transition: background-color .3s ease;
+            &:active {
+                background-color: #5a0707;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__item {
+
+            span {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $green;
+                    transition: transform .3s ease;
+                    transform: scaleX(0);
+                }
+            }
+
+            &:hover {
+                span {
+
+                    &:before {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+
+        &__button {
+            &--contact {
+                transition: background-color .3s ease;
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $green;
+                    transform: scaleX(0);
+                    transform-origin: 0 0;
+                    transition: .3s ease;
+                    transition-property: transform,background-color;
+                }
+
+                &:active {
+
+                    &:before {
+                        transform: scaleX(1);
+                        background-color: #5a0707;
+                    }
+                }
+
+                &:hover {
+
+                    &:before {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    &__info {
+        a {
+            span {
+                transition: color .3s ease;
+                border: none;
+                position: relative;
+
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $opacityWhite;
+                    display: block;
+                    transform: scaleX(1);
+                    transform-origin: 50% 50%;
+                    transition: .3s ease;
+                    transition-property: background-color,transform;
+                }
+            }
+
+            &:hover {
+                span {
+                    color: #fff;
+
+                    &:before {
+                        transform: scaleX(0.5);
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button {
+
+    &--blue {
+        transition: .3s ease;
+        transition-property: color,background-color,transform;
+
+        &:active {
+            color: #fff;
+            background-color: #0e5dce !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &--blue {
+
+            &:hover {
+                background-color: #2b82ff;
+                transform: translate(0,-4px);
+            }
+
+            &:active {
+                color: #fff;
+                background-color: #0e5dce !important;
+            }
+        }
+    }
+}
