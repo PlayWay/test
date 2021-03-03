@@ -71,7 +71,7 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
     "rimraf": "^2.6.2",
